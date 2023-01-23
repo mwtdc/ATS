@@ -154,7 +154,7 @@ for z in (1, 2):
     vall = vall[:-1]
     # print(vall)
     try:
-        sql = (f'INSERT INTO treid_03.hub_indices (date, code, hour, hubdev, hubindex, zoneindex, load_time) VALUES {vall};')
+        sql = (f'INSERT INTO mydb.hub_indices (date, code, hour, hubdev, hubindex, zoneindex, load_time) VALUES {vall};')
         conn_cursor.execute(sql)
         connection_vc.commit()
         connection_vc.close()
