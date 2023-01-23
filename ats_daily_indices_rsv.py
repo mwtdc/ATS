@@ -172,7 +172,7 @@ for z in (1, 2):
     # print(vall)
     columns_to_db = ', '.join(list_columns)
     try:
-        sql = (f'INSERT INTO treid_03.daily_indices_rsv ({columns_to_db}, LOAD_TIME) VALUES {vall};')
+        sql = (f'INSERT INTO mydb.daily_indices_rsv ({columns_to_db}, LOAD_TIME) VALUES {vall};')
         conn_cursor.execute(sql)
         connection_vc.commit()
         connection_vc.close()
